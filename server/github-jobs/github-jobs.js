@@ -22,6 +22,7 @@ const fetchGihubJobs = async () => {
       .catch(err => console.log(err, "this is errror ____________"))
   }
   console.log(allVacancies.length, "{------- JOBS")
+  return allVacancies
 }
 
 fetchGihubJobs()
