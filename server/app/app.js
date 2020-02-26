@@ -10,7 +10,7 @@ app.get("/jobs", async (req, res) => {
     const jobs = await getAsync("github")
     return res.send(jobs)
   } catch (err) {
-    console.log(err, "this is api error ____________")
+    console.log(err, "this is api error")
   }
 })
 

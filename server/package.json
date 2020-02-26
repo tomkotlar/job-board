@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/tomkotlar/job-board/issues"
   },
-  "homepage": "https://github.com/tomkotlar/job-board#readme"
+  "homepage": "https://github.com/tomkotlar/job-board#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "redis": "^3.0.2"
+  }
 }

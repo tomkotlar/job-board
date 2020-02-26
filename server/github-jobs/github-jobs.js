@@ -21,16 +21,10 @@ const fetchGihubJobs = async () => {
         allVacancies.push(...jobs)
         count = jobs.length
         currentPage++
-        console.log(count, "--------")
       })
-      .catch(err => console.log(err, "this is github-jobs error ____________"))
+      .catch(err => console.log(err, "this is github-jobs error"))
   }
-  console.log(allVacancies.length, "{------- JOBS")
-//   return allVacancies
+// return allVacancies
 const success = await setAsync('github', JSON.stringify(allVacancies))
- console.log({success})
 }
-
-  //  fetchGihubJobs()
-
 module.exports = fetchGihubJobs
