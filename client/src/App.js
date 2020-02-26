@@ -1,17 +1,29 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "./App.css"
-import {JobsList} from "./Components/JobList/JobsList"
+import { JobsList } from "./Components/JobList/JobsList"
 
-const fakeJobs = [
-  { id: 1, title: "Software Developer", company: "Google" },
-  { id: 2, title: "Junior Software Developer", company: "Apple" },
-  {id: 3, title: "Mid-Level Software Developer", company: "Facebook" }
-]
+const api = "http://localhost:9090/jobs"
+
+async function fetchVacancies(update) {
+  try{
+    const response = await fetch(api)
+    const jobList = await response.json()
+    console.log({ jobList})
+    update(jobList)
+  }catch(err){
+    console.log(err)
+  }
+}
 
 function App() {
+  const [vacanciesList, updateVacancies] = useState([])
+
+  useEffect(() => {
+    fetchVacancies(updateVacancies)
+  }, [])
   return (
     <div className="App">
-      <JobsList vacancies={fakeJobs} />
+      <JobsList vacancies={vacanciesList} />
     </div>
   )
 }
