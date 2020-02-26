@@ -1,12 +1,11 @@
 import React from 'react'
 
-const SingleJob = ({job}) => {
-    return (
+export const SingleJob = ({job}) => (
         <div>
             <p>{job.title}</p> 
             <p>{job.company}</p> 
         </div>
     )
-}
 
-export default SingleJob
+
+// export default SingleJob

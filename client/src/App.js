@@ -1,6 +1,6 @@
 import React from "react"
 import "./App.css"
-import Jobs from "./Components/JobList/JobsList"
+import {JobsList} from "./Components/JobList/JobsList"
 
 const fakeJobs = [
   { id: 1, title: "Software Developer", company: "Google" },
@@ -11,7 +11,7 @@ const fakeJobs = [
 function App() {
   return (
     <div className="App">
-      <Jobs vacancies={fakeJobs} />
+      <JobsList vacancies={fakeJobs} />
     </div>
   )
 }
