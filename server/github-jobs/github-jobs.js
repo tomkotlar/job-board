@@ -1,4 +1,8 @@
 const axios = require("axios").default
+const redis = require("redis");
+const client = redis.createClient();
+const { promisify } = require("util");
+const setAsync = promisify(client.set).bind(client);
 
 const instance = axios.create({
   baseURL: "https://jobs.github.com/positions.json"
@@ -22,9 +26,11 @@ const fetchGihubJobs = async () => {
       .catch(err => console.log(err, "this is errror ____________"))
   }
   console.log(allVacancies.length, "{------- JOBS")
-  return allVacancies
+//   return allVacancies
+const success = await setAsync('github', JSON.stringify(allVacancies))
+ console.log({success})
 }
 
-fetchGihubJobs()
+//  fetchGihubJobs()
 
 module.exports = fetchGihubJobs
