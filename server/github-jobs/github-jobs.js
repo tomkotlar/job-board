@@ -31,6 +31,6 @@ const success = await setAsync('github', JSON.stringify(allVacancies))
  console.log({success})
 }
 
-//  fetchGihubJobs()
+//   fetchGihubJobs()
 
 module.exports = fetchGihubJobs
