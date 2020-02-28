@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import "./App.css"
 import { JobsList } from "./Components/JobList/JobsList"
 
+
 const api = "http://localhost:9090/jobs"
 
 async function fetchVacancies(update) {
@@ -23,6 +24,7 @@ function App() {
   }, [])
   return (
     <div className="App">
+  <h1>job list</h1>
       <JobsList vacancies={vacanciesList} />
     </div>
   )

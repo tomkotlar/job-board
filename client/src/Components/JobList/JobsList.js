@@ -1,13 +1,18 @@
 import React from "react"
-import {SingleJob} from '../SingleJob/SingleJob'
+import { SingleJob } from "../SingleJob/SingleJob"
+// import './JobsList.css'
+import { Grid } from "semantic-ui-react"
 
-export const JobsList = ({vacancies}) => (
-  <div>
-      {vacancies.map((job, index) => (
-        <SingleJob  key={index} job={job} />
-        ))
-        }
-    </div>
-)
+const JobsList = ({ vacancies }) => {
+  return (
+    <React.Fragment>
+      <Grid stackable columns={6}>
+        {vacancies.map((job, index) => (
+          <SingleJob key={index} job={job} />
+        ))}
+      </Grid>
+    </React.Fragment>
+  )
+}
 
-
+export { JobsList }
