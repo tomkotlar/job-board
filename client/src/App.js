@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react"
 import "./App.css"
 import { JobsList } from "./Components/JobList/JobsList"
-
+import { Segment, Icon, Button, Header, Loader, Dimmer } from "semantic-ui-react"
 
 const api = "http://localhost:9090/jobs"
 
 async function fetchVacancies(update) {
-  try{
+  try {
     const response = await fetch(api)
     const jobList = await response.json()
-    console.log({ jobList})
+    console.log({ jobList })
     update(jobList)
-  }catch(err){
+  } catch (err) {
     console.log(err)
   }
 }
@@ -22,10 +22,28 @@ function App() {
   useEffect(() => {
     fetchVacancies(updateVacancies)
   }, [])
+
   return (
-    <div className="App">
-  <h1>job list</h1>
-      <JobsList vacancies={vacanciesList} />
+    <div className="segment">
+      <Segment placeholder padded>
+        <Header icon>
+          <Icon name="search" />
+          Looking for Dev Jobs
+        </Header>
+        <Segment.Inline>
+          <Button primary>Clear Query</Button>
+          <Button>Add Document</Button>
+        </Segment.Inline>
+      </Segment>
+      {!vacanciesList.length ? (
+          <Dimmer active >
+          <Loader size='massive'>Loading</Loader>
+        </Dimmer>
+      ) : (
+        <div className="Jobs">
+          <JobsList vacancies={vacanciesList} />
+        </div>
+      )}
     </div>
   )
 }

@@ -1,6 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
 import { SingleJob } from "../SingleJob/SingleJob"
-// import './JobsList.css'
 import { Grid } from "semantic-ui-react"
 
 const JobsList = ({ vacancies }) => {
