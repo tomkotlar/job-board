@@ -6,13 +6,6 @@ body {
   padding: 60px 20px;
 }
 
-.segment {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-}
 .Jobs {
   margin-top: 30px;
   display: flex;
