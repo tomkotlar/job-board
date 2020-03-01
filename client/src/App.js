@@ -4,7 +4,10 @@ import { JobsList } from "./Components/JobList/JobsList"
 import { SearchBox } from "./Components/SearchBox/SearchBox"
 import { Loader, Dimmer } from "semantic-ui-react"
 
-const api = "http://localhost:9090/jobs"
+// const api = "http://localhost:9090/jobs"
+
+const proxy = "https://cors-anywhere.herokuapp.com/"
+const api = `${proxy}https://jobs.github.com/positions.json`
 
 class App extends Component {
   state = {
@@ -16,7 +19,10 @@ class App extends Component {
   async componentDidMount() {
     try {
       const response = await fetch(api)
+      console.log(response)
+     
       const jobList = await response.json()
+      console.log(jobList)
       this.setState({ vacanciesList: jobList })
     } catch (error) {
       console.log(error)
