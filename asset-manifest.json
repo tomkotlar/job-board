@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/job-board/static/css/main.6057dd76.chunk.css",
-    "main.js": "/job-board/static/js/main.0b277fe1.chunk.js",
-    "main.js.map": "/job-board/static/js/main.0b277fe1.chunk.js.map",
+    "main.js": "/job-board/static/js/main.87ccdbbe.chunk.js",
+    "main.js.map": "/job-board/static/js/main.87ccdbbe.chunk.js.map",
     "runtime-main.js": "/job-board/static/js/runtime-main.9c78ab80.js",
     "runtime-main.js.map": "/job-board/static/js/runtime-main.9c78ab80.js.map",
     "static/css/2.18011796.chunk.css": "/job-board/static/css/2.18011796.chunk.css",
     "static/js/2.d04a20b4.chunk.js": "/job-board/static/js/2.d04a20b4.chunk.js",
     "static/js/2.d04a20b4.chunk.js.map": "/job-board/static/js/2.d04a20b4.chunk.js.map",
     "index.html": "/job-board/index.html",
-    "precache-manifest.a382c47d33bed5750fb50d772391823e.js": "/job-board/precache-manifest.a382c47d33bed5750fb50d772391823e.js",
+    "precache-manifest.3924381970c593edb100eb863a5c7d04.js": "/job-board/precache-manifest.3924381970c593edb100eb863a5c7d04.js",
     "service-worker.js": "/job-board/service-worker.js",
     "static/css/2.18011796.chunk.css.map": "/job-board/static/css/2.18011796.chunk.css.map",
     "static/css/main.6057dd76.chunk.css.map": "/job-board/static/css/main.6057dd76.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.18011796.chunk.css",
     "static/js/2.d04a20b4.chunk.js",
     "static/css/main.6057dd76.chunk.css",
-    "static/js/main.0b277fe1.chunk.js"
+    "static/js/main.87ccdbbe.chunk.js"
   ]
 }
