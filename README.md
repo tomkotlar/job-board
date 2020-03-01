@@ -1,4 +1,4 @@
-in progress
+
 # :briefcase: Job-board Server
 
 The aplication is deployed with GitHub Pages [Job-board](https://tomkotlar.github.io/job-board/)
