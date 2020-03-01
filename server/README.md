@@ -73,11 +73,8 @@ You will run local server on port 9090
 ```bash
 https://redis.io/
 # Official web for redis. 
-
-https://www.youtube.com/watch?v=oaJq1mQ3dFI
-
 ```
-Step by step guide for instalation Redis by :space_invader: [traversymedia](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+Step by step [Redis](https://www.youtube.com/watch?v=oaJq1mQ3dFI) for node instalation guide by :space_invader: [traversymedia](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 
 
 ###  :pen: Run Redis client
